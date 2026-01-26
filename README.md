@@ -54,4 +54,4 @@ Run the script:
 
 Bash
 
-python main.py
+python Weather app.py
