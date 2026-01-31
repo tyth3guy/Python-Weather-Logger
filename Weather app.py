@@ -1,7 +1,7 @@
 import requests
 import os
 
-A_Key = 'e70b48a8e7cd647d7eb7b989cf48053c'
+A_Key = 'Enter your API key here'
 zip_code = input("What is the zip code of your area? ")
 
 weather_data = requests.get(
@@ -22,5 +22,6 @@ with open('weather out.csv', 'a') as f:
     if not file_exists:
         f.write("City, Weather, Desc., Temp\n")
     f.write(f"{name}, {weather}, {desc}, {temp}\n")
+
 
 print(f"Recorded data for {name}!")
